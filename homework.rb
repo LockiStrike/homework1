@@ -9,6 +9,7 @@ def generate
   first_part = ->()  { (LETTERS_RANGE).to_a.sample(FIRST_PART_LENGTH).join }
   second_part = ->() { (DIGITS_RANGE).to_a.sample(SECOND_PART_LENGTH).join }
   third_part = ->() { (LETTERS_RANGE).to_a.sample(THIRD_PART_LENGTH).join }
-  result = "#{first_part.call}-#{second_part.call}-#{third_part.call}
+  result = "#{first_part.call}-#{second_part.call}-#{third_part.call}"
 end
 
+123
